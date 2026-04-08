@@ -1,38 +1,69 @@
- # Clasificador Inteligente de Imágenes de Ropa
+# Clasificador de Prendas con Redes Neuronales (Deep Learning)
 
-Proyecto desarrollado como parte del módulo **Fundamentos de Deep Learning**, cuyo objetivo es diseñar e implementar un modelo capaz de clasificar imágenes de prendas de vestir utilizando redes neuronales.
+Este proyecto implementa un modelo de clasificación de imágenes utilizando Redes Neuronales Artificiales (RNA) y técnicas de Deep Learning para identificar distintos tipos de prendas de vestir a partir de imágenes.
 
----
+## Objetivo
 
-## Descripción
+Desarrollar un modelo capaz de clasificar automáticamente prendas de ropa en distintas categorías, utilizando datos de imágenes y técnicas de aprendizaje profundo, con el fin de simular un sistema de reconocimiento visual aplicado a e-commerce o sistemas inteligentes.
 
-Este proyecto implementa diferentes enfoques de redes neuronales para la clasificación de imágenes del dataset **Fashion-MNIST**, avanzando progresivamente desde una red neuronal densa hasta una red neuronal convolutiva (CNN).
+## Enfoque del Proyecto
 
-Además, se incluye la capacidad de realizar predicciones sobre imágenes externas, simulando un escenario real de uso en una plataforma de e-commerce.
+El proyecto se desarrolla en las siguientes etapas:
 
----
+### 1. Preparación de Datos
+- Uso del dataset Fashion MNIST
+- Normalización de imágenes
+- División en conjuntos de entrenamiento y prueba
 
-##  Objetivos
+### 2. Modelado con Redes Neuronales
+- Implementación de redes neuronales artificiales
+- Uso de arquitecturas de Deep Learning (incluyendo CNN)
+- Entrenamiento del modelo
 
-- Comprender los fundamentos de redes neuronales artificiales.
-- Implementar modelos de Deep Learning en Python.
-- Comparar arquitecturas densas vs convolutivas.
-- Evaluar el rendimiento mediante métricas y visualizaciones.
-- Aplicar el modelo a imágenes reales externas.
+### 3. Evaluación del Modelo
+- Métricas de desempeño (accuracy, precision, recall, f1-score)
+- Análisis de resultados por clase
+- Validación del modelo
 
----
+### 4. Visualización de Resultados
+- Curvas de entrenamiento (loss y accuracy)
+- Matriz de confusión
+- Predicciones del modelo sobre imágenes reales
 
-##  Estructura del proyecto
+## Resultados
 
-```bash
-Proyecto_Clasificador_Ropa/
-│
-├── L1_RedNeuronalArtificial.ipynb
-├── L2_DeepLearning.ipynb
-├── L3_ImplementacionRN.ipynb
-├── L4_CNN.ipynb
-│
-├── imagenes_externas/
-├── outputs/
-├── models/
-└── README.md
+El modelo alcanza un desempeño sólido en la clasificación de prendas:
+
+- Accuracy global: 0.91 :contentReference[oaicite:0]{index=0}  
+- Loss: 0.2545 :contentReference[oaicite:1]{index=1}  
+
+Se observa un buen rendimiento en categorías como:
+- Trouser, Sandal, Bag y Sneaker (alta precisión)
+
+Y mayor dificultad en:
+- Shirt (menor precisión relativa)
+
+## Ejemplos de Predicción
+
+El modelo es capaz de identificar correctamente distintas prendas, como pantalones, camisetas, calzado y accesorios, incluso en imágenes no vistas durante el entrenamiento.
+
+## Tecnologías Utilizadas
+
+- Python
+- TensorFlow / Keras
+- NumPy
+- Matplotlib
+- Scikit-Learn
+
+## Valor del Proyecto
+
+Este proyecto demuestra la capacidad de:
+
+- Implementar modelos de Deep Learning
+- Trabajar con imágenes y datos no estructurados
+- Evaluar modelos de clasificación
+- Interpretar resultados de redes neuronales
+
+## Conclusión
+
+Las redes neuronales permiten resolver problemas complejos de clasificación de imágenes con un alto nivel de precisión. Este tipo de modelos tiene aplicaciones directas en sistemas de recomendación, e-commerce y visión computacional.
